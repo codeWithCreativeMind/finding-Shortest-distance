@@ -7,25 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Finding shortest distance</h1>
-    <div onSubmit="submit()">
+    
+    
         
-            
-           <h2>Hello JAVASCRIPT</h2>
-           <h2>hello MJRS this is github</h2>
-           <p>kishore Lorem ipsum dolor sit amet.</p>
-         <p>pulling file................................................</p>
+        <select  onchange="selected(this)" id="choose">
+            <option value="TV">TV</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Laptop">Laptop</option>
+        </select>
+        
 
-            <button id ="btn">Submit</button>
-
-      
-    </div>
     <script>
-        
-         function submit(){
-
-             console.log("form submitted sccesfully")
-         }
+              var s=document.getElementById("choose").value
+              function selected(event){
+                  console.log("item selected",event.value)
+              }
     </script>
+   
 </body>
 </html>
